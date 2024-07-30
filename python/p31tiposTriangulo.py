@@ -11,27 +11,38 @@ se apenas dois dos lados forem iguais, apresente a mensagem: TRIANGULO ISOSCELES
 '''
 
 x,y,z = map(float, input().split(' '))
+lista = [x, y, z]
+lista.sort(reverse=True)
+a,b,c = lista
 
-if x > y and x > z and y > z or x == y and y == z:
-    a = x
-    b = y
-    c = z
-    print(a, b, c)
+if a >= (b + c):
+    print('NAO FORMA TRIANGULO')
 
-elif x > y and x > z and y < z:
-    a = x
-    b = z
-    c = y
-    print(a, b, c)
+    if a == b == c:
+        print('TRIANGULO EQUILATERO')
+    elif a == b != c or a != b == c:
+        print('TRIANGULO ISOSCELES')
 
-elif x < y and x < z and y > z:
-    a = y
-    b = z
-    c = x
-    print(a, b, c)
+elif a**2 == ((b**2)+(c**2)):
+    print('TRIANGULO RETANGULO')
 
-elif x == y and x < z and y < z:
-    a = z
-    b = x
-    c = y 
-    print(a, b, c)
+    if a == b == c:
+        print('TRIANGULO EQUILATERO')
+    elif a == b != c or a != b == c:
+        print('TRIANGULO ISOSCELES')
+
+elif a**2 > ((b**2)+(c**2)):
+    print('TRIANGULO OBTUSANGULO')
+
+    if a == b == c:
+        print('TRIANGULO EQUILATERO')
+    elif a == b != c or a != b == c:
+        print('TRIANGULO ISOSCELES')
+
+elif a**2 < ((b**2)+(c**2)):
+    print('TRIANGULO ACUTANGULO')
+
+    if a == b == c:
+        print('TRIANGULO EQUILATERO')
+    elif a == b != c or a != b == c:
+        print('TRIANGULO ISOSCELES')

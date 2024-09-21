@@ -12,6 +12,7 @@ valor_string = str(valor)
     if valor_int > 500:
         valor_int 
         print('so testando')
+        
 
 '''
 

@@ -3,7 +3,7 @@
 # - Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.
 
 raio = float(input())
-pi = 3.14159
-area = pi*(raio**2)
+PI = 3.14159
+area = PI*(raio**2)
 print(f'A={area:.4f}')
 

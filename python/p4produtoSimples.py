@@ -4,5 +4,5 @@
 
 a = int(input())
 b = int(input())
-prod = a * b
-print('PROD =',prod)
+produto = a * b
+print('PROD =',produto)

@@ -4,5 +4,5 @@
 
 a = int(input())
 b = int(input())
-x = a + b
-print('X =',x)
+soma = a + b
+print('X =',soma)
